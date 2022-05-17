@@ -10,6 +10,10 @@ It is dogfooded in my config.
   (straight-use-package
   '(atha-emacs :type git :host github :repo "pandademic/atha-emacs"))
   (require 'atha-defaults) ;; optional , just some stuff
-  (setq atha-font-name "FONT NAME HERE") ;; required
+  ;; here you would put variables ,see below
   (require 'atha-ui) ;; ACTIVATE!
 ```
+### VARIABLES
+-----
+set them all with `setq`
+- `atha-font-name` , string , name of the font for us to use
