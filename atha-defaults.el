@@ -1,9 +1,4 @@
 
-;; no scroll bar menu bar or tool bar
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
-
 ;; y/n
 (fset 'yes-or-no-p 'y-or-n-p)
 
