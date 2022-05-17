@@ -19,7 +19,7 @@
                '(tool-bar-lines . 0)
                '(menu-bar-lines . 0))))
 
-;; No ugly button for checkboxes
-(setq widget-image-enable nil)
+(add-to-list 'default-frame-alist '(font . atha-font-name))
+(set-face-attribute 'default t :font atha-font-name )
 
 (provide 'atha-ui)
