@@ -18,9 +18,9 @@
                '(right-fringe   . 1)
                '(tool-bar-lines . 0)
                '(menu-bar-lines . 0))))
-(if atha-font-name
-	(ignore &rest IGNORE)
- (add-to-list 'default-frame-alist '(font . atha-font-name))
- (set-face-attribute 'default t :font atha-font-name ))
+(if (bound-and-true-p VAR)
+    (add-to-list 'default-frame-alist '(font . atha-font-name))
+    (set-face-attribute 'default t :font atha-font-name )
+   (ignore))
 
 (provide 'atha-ui)
