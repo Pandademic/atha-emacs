@@ -1,3 +1,7 @@
+;;; -*- lexical-binding: t; -*-
+;; main atha-ui file
+;; copyright 2022 Atharv Gupte
+;; Licenced under the MIT licence<https://raw.githubusercontent.com/Pandademic/atha-emacs/main/LICENSE>
 
 ;; no scroll bar menu bar or tool bar ( If found )
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
