@@ -1,8 +1,8 @@
 
-;; no scroll bar menu bar or tool bar
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
+;; no scroll bar menu bar or tool bar ( If found )
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))\
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))      
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))   
 
 ;; pad window
 
@@ -18,8 +18,7 @@
                '(right-fringe   . 1)
                '(tool-bar-lines . 0)
                '(menu-bar-lines . 0))))
-(if not(atha-font-name) 
+(if  (eq (boundp 'atha-font-name) t)
   (add-to-list 'default-frame-alist '(font . atha-font-name)
   (set-face-attribute 'default t :font atha-font-name ))
-
 (provide 'atha-ui)
