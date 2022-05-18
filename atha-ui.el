@@ -18,6 +18,7 @@
                '(right-fringe   . 1)
                '(tool-bar-lines . 0)
                '(menu-bar-lines . 0))))
+(if (boundp 'atha-font-name)
 (add-to-list 'default-frame-alist '(font . atha-font-name))
 (set-face-attribute 'default t :font atha-font-name ))
 (provide 'atha-ui)
