@@ -29,4 +29,3 @@ or you could use the default config(require the monaco font)
 
 set them all with `setq`
 - `atha-font-name` , string , name of the font for us to use
-- `atha-font-size` int , font size in pt's
