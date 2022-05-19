@@ -30,8 +30,8 @@
 ;;(add-to-list 'default-frame-alist '(font . (concat "" atha-font-name)))
 ;;(set-face-attribute 'default t :font (concat "" atha-font-name )))
 (set 'fname_dash (concat atha-font-name "-"))
-(set 'fname_full (concat 'fname_dash atha-font-size))
-(set-face-attribute 'default t :font 'fname_full)
+(set 'fname_full (format (concat fname_dash "%s") atha-font-size))
+(set-face-attribute 'default t :font fname_full)
 
 
 
