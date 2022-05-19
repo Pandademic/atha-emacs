@@ -18,3 +18,4 @@ It is dogfooded in my config.
 set these unless you use the (`atha-defaults`) default config.
 set them all with `setq`
 - `atha-font-name` , string , name of the font for us to use
+- `atha-font-size` int , font size in pt's
