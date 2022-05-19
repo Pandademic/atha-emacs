@@ -9,11 +9,12 @@ It is dogfooded in my config.
 ``` emacs-lisp
   (straight-use-package
   '(atha-emacs :type git :host github :repo "pandademic/atha-emacs"))
-  (require 'atha-defaults) ;; optional , just some stuff
-  ;; here you would put variables ,see below
+  (require 'atha-defaults) ;; optional , the default config
+  ;; unless you use the default config , here you would put variables ,see below
   (require 'atha-ui) ;; ACTIVATE!
 ```
 ### VARIABLES
 -----
+set these unless you use the (`atha-defaults`) default config.
 set them all with `setq`
 - `atha-font-name` , string , name of the font for us to use
