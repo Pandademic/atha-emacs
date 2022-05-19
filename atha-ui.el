@@ -25,8 +25,8 @@
 
 ;; set user font
 
-(add-to-list 'default-frame-alist '(font . atha-font-name))
-(set-face-attribute 'default t :font atha-font-name ))
+(add-to-list 'default-frame-alist '(font . (concat "" atha-font-name)))
+(set-face-attribute 'default t :font (concat "" atha-font-name )))
 (set-default-font atha-font-name)
 
 ;; user font size
