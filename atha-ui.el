@@ -22,7 +22,14 @@
                '(right-fringe   . 1)
                '(tool-bar-lines . 0)
                '(menu-bar-lines . 0))))
-(if (boundp 'atha-font-name)
+
+;; set user font
+
 (add-to-list 'default-frame-alist '(font . atha-font-name))
 (set-face-attribute 'default t :font atha-font-name ))
+(set-default-font atha-font-name)
+
+;; user font size
+(set-face-attribute 'default nil :height atha-font-size)
+
 (provide 'atha-ui)
