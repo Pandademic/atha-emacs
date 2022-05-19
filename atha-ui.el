@@ -26,9 +26,4 @@
 (set-face-attribute 'default nil :height atha-font-size)
 
 
-;; font setting
-(add-to-list 'default-frame-alist '(font . atha-font-name))
-
-
-
 (provide 'atha-ui)
