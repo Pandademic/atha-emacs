@@ -23,15 +23,11 @@
                '(tool-bar-lines . 0)
                '(menu-bar-lines . 0))))
 ;; user font size
-(set-face-attribute 'default nil :height atha-font-size)
+;;(set-face-attribute 'default nil :height atha-font-size)
 
-;; set user font
 
-;;(add-to-list 'default-frame-alist '(font . (concat "" atha-font-name)))
-;;(set-face-attribute 'default t :font (concat "" atha-font-name )))
-;;(set 'fname_dash (concat atha-font-name "-"))
-;;(set 'fname_full (concat fname_dash (number-to-string atha-font-size)))
-(set-face-attribute 'default t :font atha-font-name)
+;; font testing
+(set-face-attribute 'default nil :font atha-font-name :height atha-font-size)
 
 
 
