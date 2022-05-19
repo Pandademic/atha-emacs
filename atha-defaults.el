@@ -1,4 +1,4 @@
-(setq atha-font-name "Monaco 14")
+(setq atha-font-name "Monaco")
 
 (setq atha-font-size 117)
 
