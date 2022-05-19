@@ -30,6 +30,6 @@
 (set-default-font atha-font-name)
 
 ;; user font size
-(set-face-attribute 'default nil :height atha-font-size)
+(set-face-attribute 'default nil :height (* 10 atha-font-size))
 
 (provide 'atha-ui)
