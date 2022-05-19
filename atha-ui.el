@@ -29,7 +29,7 @@
 
 ;;(add-to-list 'default-frame-alist '(font . (concat "" atha-font-name)))
 ;;(set-face-attribute 'default t :font (concat "" atha-font-name )))
-(set-default-font (concat atha-font-name "- " atha-font-size))
+(set-default-font (concat concat(atha-font-name "-") atha-font-size))
 
 
 
