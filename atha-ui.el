@@ -22,14 +22,15 @@
                '(right-fringe   . 1)
                '(tool-bar-lines . 0)
                '(menu-bar-lines . 0))))
+;; user font size
+(set-face-attribute 'default nil :height atha-font-size)
 
 ;; set user font
 
-(add-to-list 'default-frame-alist '(font . (concat "" atha-font-name)))
-(set-face-attribute 'default t :font (concat "" atha-font-name )))
-(set-default-font atha-font-name)
+;;(add-to-list 'default-frame-alist '(font . (concat "" atha-font-name)))
+;;(set-face-attribute 'default t :font (concat "" atha-font-name )))
+(set-default-font (concat atha-font-name " " atha-font-size))
 
-;; user font size
-(set-face-attribute 'default nil :height atha-font-size)
+
 
 (provide 'atha-ui)
