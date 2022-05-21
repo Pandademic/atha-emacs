@@ -5,8 +5,8 @@
 
 ;; no scroll bar menu bar or tool bar ( If found )
 (if atha-show-scrollbar (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1)))
-(if atha-show-toolbar (if fboundp 'tool-bar-mode) (tool-bar-mode -1)))      
-(if atha-show-menubar (if fboundp 'menu-bar-mode) (menu-bar-mode -1)))  
+(if atha-show-toolbar (if (fboundp 'tool-bar-mode) (tool-bar-mode -1)))      
+(if atha-show-menubar (if (fboundp 'menu-bar-mode) (menu-bar-mode -1)))  
 
 ;; pad window
 
