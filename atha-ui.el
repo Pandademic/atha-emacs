@@ -1,7 +1,7 @@
 ;;; -*- lexical-binding: t; -*-
 ;; main atha-ui file
 ;; copyright 2022 Atharv (atha) Gupte
-;; Licenced under the MIT licence<https://raw.githubusercontent.com/Pandademic/atha-emacs/main/LICENSE>
+;; Licenced under the MIT licence <https://raw.githubusercontent.com/Pandademic/atha-emacs/main/LICENSE>
 
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
@@ -11,24 +11,10 @@
 (if atha-show-toolbar (tool-bar-mode 1))      
 (if atha-show-menubar (menu-bar-mode 1))  
 
-;; pad window
-
-;;(setq default-frame-alist
-;;      (append (list
-;;	           '(min-height . 1)
-;;               '(height     . 45)
-;;	           '(min-width  . 1)
-;;               '(width      . 81)
-;;              '(vertical-scroll-bars . nil)
-;;               '(internal-border-width . 24)
-;;               '(left-fringe    . 1)
-;;              '(right-fringe   . 1)
-;;               '(tool-bar-lines . 0)
-;;'(menu-bar-lines . 0))))
-
 ;; user font size
 (set-face-attribute 'default nil :height atha-font-size)
 
+;; pad window
 
 (modify-all-frames-parameters
  '((right-divider-width . 40)
