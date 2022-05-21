@@ -1,6 +1,6 @@
 ;;; -*- lexical-binding: t; -*-
 ;; main atha-ui file
-;; copyright 2022 Atharv Gupte
+;; copyright 2022 Atharv (atha) Gupte
 ;; Licenced under the MIT licence<https://raw.githubusercontent.com/Pandademic/atha-emacs/main/LICENSE>
 
 (scroll-bar-mode -1)
