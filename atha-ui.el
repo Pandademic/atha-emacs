@@ -3,10 +3,13 @@
 ;; copyright 2022 Atharv Gupte
 ;; Licenced under the MIT licence<https://raw.githubusercontent.com/Pandademic/atha-emacs/main/LICENSE>
 
-;; no scroll bar menu bar or tool bar ( If found )
-(if atha-show-scrollbar (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1)))
-(if atha-show-toolbar (if (fboundp 'tool-bar-mode) (tool-bar-mode -1)))      
-(if atha-show-menubar (if (fboundp 'menu-bar-mode) (menu-bar-mode -1)))  
+(scroll-bar-mode -1)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+;; read bar settings
+(if atha-show-scrollbar (scroll-bar-mode 1))
+(if atha-show-toolbar (tool-bar-mode 1))      
+(if atha-show-menubar (menu-bar-mode 1))  
 
 ;; pad window
 
