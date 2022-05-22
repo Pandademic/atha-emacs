@@ -7,4 +7,6 @@
 
 (setq atha-show-menubar nil)
 
+(setq atha-window-space 35)
+
 (provide 'atha-defaults)
