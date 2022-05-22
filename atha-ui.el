@@ -17,8 +17,8 @@
 ;; pad window
 
 (modify-all-frames-parameters
- '((right-divider-width . 40)
-   (internal-border-width . 40)))
+ '((right-divider-width . atha-window-space)
+   (internal-border-width . atha-window-space)))
 (dolist (face '(window-divider
                 window-divider-first-pixel
                 window-divider-last-pixel))
