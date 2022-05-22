@@ -30,7 +30,8 @@ or you could use the default config(require the monaco font)
 these are the varible you'll use to customize the ui.
 
 set them all with `setq`
-- `atha-font-name` , string , name of the font for us to use
+- `atha-font-name` , `string` , name of the font for us to use
 - `atha-show-scrollbar` , `nil` or `t` , to show the scrollbar
 - `atha-show-menubar` , `nil` or `t` , to show the menubar
-- `atha-shw-toolbar` , `nil` or `t` , to show the toolbar
+- `atha-show-toolbar` , `nil` or `t` , to show the toolbar
+- `atha-window-space` , `int` , how much spacing around the main area of emacs/
