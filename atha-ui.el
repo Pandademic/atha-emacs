@@ -6,6 +6,8 @@
 (defmacro if-nil (what action)
   `(if (equal ,what nil) ,action))
 
+(defmacro if-not-nil (what action)
+  `(if (not ,what) ,action))
 
 ;; read bar settings
 (if-nil atha-show-scrollbar (scroll-bar-mode -1))
@@ -13,7 +15,7 @@
 (if-nil atha-show-menubar (menu-bar-mode -1))  
 
 ;; user font size
-(set-face-attribute 'default nil :height atha-font-size)
+(if-not-nil atha-font-size (set-face-attribute 'default nil :height atha-font-size))
 
 ;; pad window
 
