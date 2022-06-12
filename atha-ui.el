@@ -7,7 +7,7 @@
   `(if (equal ,what nil) ,action))
 
 (defmacro if-not-nil (what action)
-  `(if (not ,what) ,action))
+  `(if (not (equal ,what nil)) ,action))
 
 ;; read bar settings
 (if-nil atha-show-scrollbar (scroll-bar-mode -1))
