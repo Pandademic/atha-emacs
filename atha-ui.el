@@ -3,13 +3,14 @@
 ;; copyright 2022 Atharv (atha) Gupte
 ;; Licenced under the MIT licence <https://raw.githubusercontent.com/Pandademic/atha-emacs/main/LICENSE>
 
-(scroll-bar-mode -1)
-(tool-bar-mode -1)
-(menu-bar-mode -1)
+(defmacro if-nil (what action)
+  `(if (equal ,what nil) ,action))
+
+
 ;; read bar settings
-(if atha-show-scrollbar (scroll-bar-mode 1))
-(if atha-show-toolbar (tool-bar-mode 1))      
-(if atha-show-menubar (menu-bar-mode 1))  
+(if-nil atha-show-scrollbar (scroll-bar-mode -1))
+(if-nil atha-show-toolbar (tool-bar-mode -1))      
+(if-nil atha-show-menubar (menu-bar-mode -1))  
 
 ;; user font size
 (set-face-attribute 'default nil :height atha-font-size)
